@@ -40,10 +40,9 @@
 // После присвоения значения
 // console.log('firstNumber: ', firstNumber); // 5
 
-
 // // Узнать тип значения переменной
 // let a = null;
-// console.log(typeof a);  
+// console.log(typeof a);
 
 // // // String
 // const message = 'JavaScript is awesome!';
@@ -53,29 +52,21 @@
 // const isActive = false;
 // console.log(typeof isActive); // "boolean"
 
-
-
 // const myname = 'Mika is good boy';
 
 // alert(myname);
 
-
-
 // Методы confirm prompt
 // const isComing = confirm('Please confirm hotel reservation');
-// console.log(typeof isComing); 
+// console.log(typeof isComing);
 // console.log(isComing);
-
 
 // const hotelName = prompt('Please enter desired hotel name:');
 // console.log(hotelName);
 
 // const value = prompt('Please enter a number!');
-// console.log(typeof value); 
+// console.log(typeof value);
 // console.log(value);
-
-
-
 
 // const x = 2
 // const y = 3
@@ -83,13 +74,11 @@
 
 // console.log(2 + 3 * 100 * (2+3));
 
-
 // Сложение с заменой (есть и для других операторов)----------------------------------------------
 // let value = 5;
 // // Аналогично записи value = value + 10;
 // value += 10;
 // console.log(value); // 15
-
 
 // Сравнения--------------------------------------------------------
 // const x = 5;
@@ -105,14 +94,12 @@
 // console.log('x !== y:', x !== y); // true
 // console.log('x !== z:', x !== z); // false
 
-
 // Проверка на номер is Not a Number?--------------------------------------------------------
 // const validNumber = Number('51'); // 51
 // console.log(Number.isNaN(validNumber)); // false
 
 // const invalidNumber = Number('qweqwe'); // NaN
 // console.log(Number.isNaN(invalidNumber)); // true
-
 
 // Объект для работы с числами--------------------------------------------------------
 //  Math.floor(num) - возвращает наибольшее целое число, меньшее, либо равное указанному
@@ -139,9 +126,6 @@
 // console.log(Math.random()); // случайное число между 0 и 1
 // console.log(Math.random() * (10 - 1) + 1); // случайное число от 1 до 10
 
-
-
-
 // Конкатенация строк--------------------------------------------------------
 // const state = 'Mango ' + 'is' + ' happy';
 // console.log(state); // Mango is happy
@@ -165,7 +149,6 @@
 // result = 5 + 5 + '5';
 // console.log(result); // '105'
 // console.log(typeof result); // string
-
 
 // Работа со строками--------------------------------------------------------
 // const message = 'Welcome to Bahamas!';
@@ -211,8 +194,6 @@
 // // В интерполяции можно использовать любое валидное выражение
 // console.log(`Результат сложения равен ${2 + 2}.`); // Результат сложения равен 4.
 
-
-
 // else if
 // let cost;
 // const subscription = 'premium';
@@ -229,7 +210,6 @@
 
 // console.log(cost); // 500
 
-
 // let type;
 // const age = 20;
 
@@ -240,8 +220,6 @@
 // }
 
 // console.log(type);
-
-
 
 // SWITCH--------------------------------------------------------
 // let cost;
@@ -266,8 +244,6 @@
 
 // console.log(cost);
 
-
-
 // Цикл--------------------------------------------------------
 
 // let counter = 0;
@@ -285,7 +261,6 @@
 //   clientCounter += 1;
 // }
 
-
 // let password = '';
 
 // do {
@@ -294,8 +269,6 @@
 
 // console.log('Ввели пароль: ', password);
 
-
-
 // Цикл for--------------------------------------------------------
 
 // const max = 10;
@@ -303,7 +276,6 @@
 // for (let i = 0; i < max; i += 1) {
 //   console.log(i);
 // }
-
 
 //Сумма--------------------------------------------------------
 // const target = 3;
@@ -322,7 +294,6 @@
 //   console.log(`${max} % ${i} = `, max % i);
 // }
 
-
 //break--------------------------------------------------------
 // for (let i = 0; i < 10; i += 1) {
 //     if (i === 5) {
@@ -331,9 +302,8 @@
 //     }
 //   }
 
-
 // continue--------------------------------------------------------
-  /*
+/*
  * Используем цикл для вывода только нечетных чисел.
  * Для чётных i срабатывает continue, выполнение тела прекращается
  * и управление передаётся на следующую итерацию.
@@ -347,7 +317,6 @@
 
 //   console.log('Нечетное i: ', i); // 1, 3, 5, 7, 9
 // }
-
 
 // Бесконечные циклы
 // let userChoice;
@@ -389,8 +358,6 @@
 //     alert('Вам перезвонит менеджер!');
 // }
 
-
-
 // Ввод только положительных чисел
 // let userInput;
 // let total = 0;
@@ -413,13 +380,146 @@
 
 // console.log(total);
 
-const boxWightInPx = '25,5px';
+// const boxWightInPx = '25,5px';
 
-const wigth = Number.parseFloat(boxWightInPx);
+// const wigth = Number.parseFloat(boxWightInPx);
 
-console.log(   wigth);
+// console.log(   wigth);
 
+// console.log(true && 5 > 3 && "javascript");
 
+// task1
+'use strict';
 
+const name = 'Генератор защитного поля';
 
+let price = 1000;
 
+const message = `Выбран "${name}", цена за штуку ${price} кредитов`;
+
+console.log(message);
+
+price = 2000;
+
+const newPriceMessage = `Выбран "${name}", цена за штуку ${price} кредитов`;
+
+console.log(newPriceMessage);
+
+// task2
+('use strict');
+
+const total = 100;
+
+const ordered = 50;
+
+if (total >= ordered) {
+  alert('Заказ оформлен, с вами свяжется менеджер');
+} else {
+  alert('На складе недостаточно товаров!');
+}
+
+// task3
+('use strict');
+
+const ADMIN_PASSWORD = '2422';
+
+let message = prompt('Введите пожалуйста пароль:');
+
+if (message === null) {
+  message = 'Отменено пользователем!';
+}
+
+if (message === ADMIN_PASSWORD) {
+  message = 'Добро пожаловать!';
+} else {
+  message = 'Доступ запрещен, неверный пароль!';
+}
+
+alert(message);
+
+// task4
+('use strict');
+
+let credits = 23580;
+
+let balance;
+
+const pricePerDroid = 3000;
+
+let totalPrice;
+
+let quantityDroid = prompt('Какое количество дроидов вы хотите купить?');
+
+if (quantityDroid === null) {
+  console.log('Отменено пользователем!');
+} else {
+  totalPrice = quantityDroid * pricePerDroid;
+}
+
+if (totalPrice > credits) {
+  console.log('Недостаточно средств на счету!');
+} else {
+  balance = credits - totalPrice;
+
+  alert(
+    `Вы купили ${quantityDroid} дроидов, на счету осталось ${balance} кредитов.`,
+  );
+}
+
+// task5
+('use strict');
+
+let cost;
+
+let country = prompt('Введите страну доставки:');
+
+country = country.toLowerCase();
+
+switch (country) {
+  case 'китай':
+    cost = 100;
+    break;
+
+  case 'чили':
+    cost = 250;
+    break;
+
+  case 'австралия':
+    cost = 170;
+    break;
+
+  case 'индия':
+    cost = 80;
+    break;
+
+  case 'ямайка':
+    cost = 120;
+    break;
+
+  default:
+    alert('В вашей стране доставка не доступна');
+
+    break;
+}
+
+alert(`Доставка в ${country} будет стоить ${cost} кредитов.`);
+
+// task6
+('use strict');
+
+let userInput;
+
+let total = 0;
+
+do {
+  userInput = prompt('Введите число');
+
+  if ((userInput = Number(userInput))) {
+    total += userInput;
+  }
+
+  if (Number.isNaN(userInput) === true) {
+    alert('Вы ввели не номер');
+  }
+} while (userInput !== 0);
+alert(`Общая сумма чисел равна ${total}.`);
