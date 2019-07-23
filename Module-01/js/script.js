@@ -389,137 +389,256 @@
 // console.log(true && 5 > 3 && "javascript");
 
 // task1
-'use strict';
+// 'use strict';
 
-const name = 'Генератор защитного поля';
+// const name = 'Генератор защитного поля';
 
-let price = 1000;
+// let price = 1000;
 
-const message = `Выбран "${name}", цена за штуку ${price} кредитов`;
+// const message = `Выбран "${name}", цена за штуку ${price} кредитов`;
 
-console.log(message);
+// console.log(message);
 
-price = 2000;
+// price = 2000;
 
-const newPriceMessage = `Выбран "${name}", цена за штуку ${price} кредитов`;
+// const newPriceMessage = `Выбран "${name}", цена за штуку ${price} кредитов`;
 
-console.log(newPriceMessage);
+// console.log(newPriceMessage);
 
-// task2
-('use strict');
+// // task2
+// ('use strict');
 
-const total = 100;
+// const total = 100;
 
-const ordered = 50;
+// const ordered = 50;
 
-if (total >= ordered) {
-  alert('Заказ оформлен, с вами свяжется менеджер');
+// if (total >= ordered) {
+//   alert('Заказ оформлен, с вами свяжется менеджер');
+// } else {
+//   alert('На складе недостаточно товаров!');
+// }
+
+// // task3
+// ('use strict');
+
+// const ADMIN_PASSWORD = '2422';
+
+// let message = prompt('Введите пожалуйста пароль:');
+
+// if (message === null) {
+//   message = 'Отменено пользователем!';
+// }
+
+// if (message === ADMIN_PASSWORD) {
+//   message = 'Добро пожаловать!';
+// } else {
+//   message = 'Доступ запрещен, неверный пароль!';
+// }
+
+// alert(message);
+
+// // task4
+// ('use strict');
+
+// let credits = 23580;
+
+// let balance;
+
+// const pricePerDroid = 3000;
+
+// let totalPrice;
+
+// let quantityDroid = prompt('Какое количество дроидов вы хотите купить?');
+
+// if (quantityDroid === null) {
+//   console.log('Отменено пользователем!');
+// } else {
+//   totalPrice = quantityDroid * pricePerDroid;
+// }
+
+// if (totalPrice > credits) {
+//   console.log('Недостаточно средств на счету!');
+// } else {
+//   balance = credits - totalPrice;
+
+//   alert(
+//     `Вы купили ${quantityDroid} дроидов, на счету осталось ${balance} кредитов.`,
+//   );
+// }
+
+// // task5
+// ('use strict');
+
+// let cost;
+
+// let country = prompt('Введите страну доставки:');
+
+// country = country.toLowerCase();
+
+// switch (country) {
+//   case 'китай':
+//     cost = 100;
+//     break;
+
+//   case 'чили':
+//     cost = 250;
+//     break;
+
+//   case 'австралия':
+//     cost = 170;
+//     break;
+
+//   case 'индия':
+//     cost = 80;
+//     break;
+
+//   case 'ямайка':
+//     cost = 120;
+//     break;
+
+//   default:
+//     alert('В вашей стране доставка не доступна');
+
+//     break;
+// }
+
+// alert(`Доставка в ${country} будет стоить ${cost} кредитов.`);
+
+// // task6
+// ('use strict');
+
+// let userInput;
+
+// let total = 0;
+
+// do {
+//   userInput = prompt('Введите число');
+
+//   if ((userInput = Number(userInput))) {
+//     total += userInput;
+//   }
+
+//   if (Number.isNaN(userInput) === true) {
+//     alert('Вы ввели не номер');
+//   }
+// } while (userInput !== 0);
+// alert(`Общая сумма чисел равна ${total}.`);
+
+//Сравнение ========================================
+// const min = 10;
+
+// const max = 30;
+
+// const value = 25;
+
+// let message;
+
+// const isInRange = value > 10 && value < 30;
+
+// if (isInRange) {
+//   message = 'is in range!';
+// } else {
+//   message = 'is in not range!';
+// }
+
+// console.log(message);
+
+//IF ELSE ==========================================
+// const min = 18;
+
+// const max = 30;
+
+// let value;
+
+// let message;
+
+// value = prompt('Введите ваш возраст:');
+
+// if (value < min) {
+//   message = 'Вы достаточно молоды!';
+// } else if (value > 19 && value < 40) {
+//   message = 'Вы недостаточно молоды!';
+// } else if (value > 41 && value < 55) {
+//   message = 'Вы совсем не молоды!';
+// } else {
+//   message = 'Вы вообще живы?';
+// }
+
+// alert(message);
+
+// Тернарный оператор===========================
+// const isActive = false;
+
+// let message;
+
+// if (isActive) {
+//   message = 'Active';
+// } else {
+//   message = 'inactive';
+// }
+
+// console.log(message);
+
+// Тоже самое
+// const message = isActive ? 'Active' : 'inactive';
+
+// console.log(message);
+
+//SWITCH
+
+// const TAKEOUT = 0;
+// const COURIER = 1;
+// const POST = 2;
+// let userChoice;
+// let message;
+
+// userChoice = prompt('Выберите способ доставки');
+// userChoice = Number(userChoice);
+
+// if (userChoice === TAKEOUT) {
+//   message = 'Самовывоз';
+// } else if (userChoice === COURIER) {
+//   message = 'Курьер';
+// } else if (userChoice === POST) {
+//   message = 'Новая Почта';
+// } else {
+//   message = 'Способ доставки не выбран';
+// }
+
+// alert(message);
+
+// Тоже самое
+const TAKEOUT = 0;
+const COURIER = 1;
+const POST = 2;
+
+const promptLabel = `Выбери опцию доставки: ${TAKEOUT} - самовывоз, ${COURIER} - курьер, ${POST} - почта`;
+
+let userChoice = prompt(promptLabel);
+
+let message;
+
+if (userChoice === null) {
+  message = 'Приходите еще';
 } else {
-  alert('На складе недостаточно товаров!');
-}
+  userChoice = Number(userChoice);
 
-// task3
-('use strict');
+  switch (userChoice) {
+    case TAKEOUT:
+      message = 'Самовывоз';
+      break;
 
-const ADMIN_PASSWORD = '2422';
+    case COURIER:
+      message = 'Курьер';
+      break;
 
-let message = prompt('Введите пожалуйста пароль:');
+    case POST:
+      message = 'Новая Почта';
+      break;
 
-if (message === null) {
-  message = 'Отменено пользователем!';
-}
-
-if (message === ADMIN_PASSWORD) {
-  message = 'Добро пожаловать!';
-} else {
-  message = 'Доступ запрещен, неверный пароль!';
+    default:
+      message = 'Способ доставки не выбран';
+  }
 }
 
 alert(message);
-
-// task4
-('use strict');
-
-let credits = 23580;
-
-let balance;
-
-const pricePerDroid = 3000;
-
-let totalPrice;
-
-let quantityDroid = prompt('Какое количество дроидов вы хотите купить?');
-
-if (quantityDroid === null) {
-  console.log('Отменено пользователем!');
-} else {
-  totalPrice = quantityDroid * pricePerDroid;
-}
-
-if (totalPrice > credits) {
-  console.log('Недостаточно средств на счету!');
-} else {
-  balance = credits - totalPrice;
-
-  alert(
-    `Вы купили ${quantityDroid} дроидов, на счету осталось ${balance} кредитов.`,
-  );
-}
-
-// task5
-('use strict');
-
-let cost;
-
-let country = prompt('Введите страну доставки:');
-
-country = country.toLowerCase();
-
-switch (country) {
-  case 'китай':
-    cost = 100;
-    break;
-
-  case 'чили':
-    cost = 250;
-    break;
-
-  case 'австралия':
-    cost = 170;
-    break;
-
-  case 'индия':
-    cost = 80;
-    break;
-
-  case 'ямайка':
-    cost = 120;
-    break;
-
-  default:
-    alert('В вашей стране доставка не доступна');
-
-    break;
-}
-
-alert(`Доставка в ${country} будет стоить ${cost} кредитов.`);
-
-// task6
-('use strict');
-
-let userInput;
-
-let total = 0;
-
-do {
-  userInput = prompt('Введите число');
-
-  if ((userInput = Number(userInput))) {
-    total += userInput;
-  }
-
-  if (Number.isNaN(userInput) === true) {
-    alert('Вы ввели не номер');
-  }
-} while (userInput !== 0);
-alert(`Общая сумма чисел равна ${total}.`);
