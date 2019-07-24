@@ -608,37 +608,51 @@
 // alert(message);
 
 // Тоже самое
-const TAKEOUT = 0;
-const COURIER = 1;
-const POST = 2;
+// const TAKEOUT = 0;
+// const COURIER = 1;
+// const POST = 2;
 
-const promptLabel = `Выбери опцию доставки: ${TAKEOUT} - самовывоз, ${COURIER} - курьер, ${POST} - почта`;
+// const promptLabel = `Выбери опцию доставки: ${TAKEOUT} - самовывоз, ${COURIER} - курьер, ${POST} - почта`;
 
-let userChoice = prompt(promptLabel);
+// let userChoice = prompt(promptLabel);
 
-let message;
+// let message;
 
-if (userChoice === null) {
-  message = 'Приходите еще';
+// if (userChoice === null) {
+//   message = 'Приходите еще';
+// } else {
+//   userChoice = Number(userChoice);
+
+//   switch (userChoice) {
+//     case TAKEOUT:
+//       message = 'Самовывоз';
+//       break;
+
+//     case COURIER:
+//       message = 'Курьер';
+//       break;
+
+//     case POST:
+//       message = 'Новая Почта';
+//       break;
+
+//     default:
+//       message = 'Способ доставки не выбран';
+//   }
+// }
+
+// alert(message);
+
+// let userInput;
+
+let userInput = prompt('Введите целое число:');
+
+if (userInput === null) {
+  console.log('Ну и ладно!');
+} else if (Number.isInteger(Number(userInput))) {
+  console.log('Молодец');
 } else {
-  userChoice = Number(userChoice);
-
-  switch (userChoice) {
-    case TAKEOUT:
-      message = 'Самовывоз';
-      break;
-
-    case COURIER:
-      message = 'Курьер';
-      break;
-
-    case POST:
-      message = 'Новая Почта';
-      break;
-
-    default:
-      message = 'Способ доставки не выбран';
-  }
+  console.log('Это не целое число');
 }
-
-alert(message);
+// Или так проверять на целое число
+// else if (Number(userInput) % 1 === 0)
