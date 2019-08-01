@@ -224,4 +224,121 @@
 // console.log(smallNumber);
 
 //============================================================
+// FUNCTION
+// Функция сложения
+// const add = function(x, y) {
+//   const summ = x + y;
 
+//   console.log;
+
+//   return summ;
+// };
+
+// const result = add(2, 3);
+// console.log(result);
+
+// Функция перебора массива на поиск элемента
+
+// const includes = function(array, value) {
+//   for (const item of array) {
+//     if (item === value) {
+//       return true;
+//     }
+//   }
+
+//   return false;
+// };
+
+// console.log(includes([1, 2, 3, 4, 5], 2));
+// console.log(includes([1, 2, 3, 4, 5], 55));
+// console.log(includes(['Mango', 'Ajax', 'Poly'], 'Poly'));
+
+//Расчет стоимости гравировки
+
+// const calculatePrice = function(string, costPerWord) {
+//   let total = 0;
+//   const words = string.split(' ');
+//   //   console.log(words.length);
+
+//   for (const word of words) {
+//     total += costPerWord;
+//   }
+
+//   return total;
+// };
+// // let message = 'das dadf afffa ad adf fsd d ddd fsf aa';
+
+// console.log(calculatePrice('das dadf afffa ad adf fsd d ddd fsf aa', 15));
+// // console.log(calculatePrice('das dadf afffa ad adfdd fsf aa', 20));
+// // console.log(calculatePrice('das dadf afffa adddd fsf aa', 50));
+
+//Псевдомассив. Преобразование
+
+// const add = function(...args) {
+//   console.log(args);
+//   let total = 0;
+
+//   for (let i = 0; i < args.length; i += 1) {
+//     total += args[i];
+//   }
+
+//   return total;
+// };
+
+// console.log(add(1, 2, 3));
+// console.log(add(1, 2, 3, 4, 5));
+// console.log(add(1, 2, 3, 4, 5, 6, 7, 8, 9));
+
+// ======================
+
+// const add = function(mult, ...args) {
+//   let total = 0;
+
+//   for (let i = 0; i < args.length; i += 1) {
+//     total += args[i];
+//   }
+
+//   return total * mult;
+// };
+
+// console.log(add(5, 1, 2, 3));
+// console.log(add(10, 1, 2, 3, 4, 5));
+// console.log(add(15, 1, 2, 3, 4, 5, 6, 7, 8, 9));
+
+// let mas = [2, 2, -2, -3, -3, 1, 4, 4, -5, 2];
+// let total = 0;
+
+// for (let i = 0; i < mas.length; i += 1) {
+//   if (mas[i] > 0 && mas[i] % 2 === 0) {
+//     total += mas[i];
+//   }
+// }
+
+// console.log(total);
+
+// for (let i = 0; i < 3; i++) {
+//   alert(`number ${i}!`);
+// }
+
+// let i = 0;
+// while (i < 3) {
+//   alert(`number ${i}!`);
+//   i += 1;
+// }
+
+// let userInput;
+
+// do {
+//   userInput = prompt('Введите число больше 100', 0);
+// } while (userInput < 100 && userInput);
+// console.log(userInput);
+
+let n = 10;
+
+nextPrime: for (let i = 2; i <= n; i++) {
+  for (let j = 2; j < i; j += 1) {
+    if (i % j == 0) continue nextPrime;
+  }
+
+  alert(i);
+}
