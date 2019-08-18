@@ -333,12 +333,41 @@
 // } while (userInput < 100 && userInput);
 // console.log(userInput);
 
-let n = 10;
+// let n = 10;
 
-nextPrime: for (let i = 2; i <= n; i++) {
-  for (let j = 2; j < i; j += 1) {
-    if (i % j == 0) continue nextPrime;
-  }
+// nextPrime: for (let i = 2; i <= n; i++) {
+//   for (let j = 2; j < i; j += 1) {
+//     if (i % j == 0) continue nextPrime;
+//   }
 
-  alert(i);
-}
+//   alert(i);
+// }
+
+//Самое большое четное число ==================================================
+
+// const array = [42, 25, 94, 79, 86, 51, 99, 70, 74, 25];
+
+// let maxCoin;
+// maxCoin = array[0];
+
+// const findMaxNumber = function(array) {
+//   for (let i = 0; i < array.length; i += 1) {
+//     if (array[i] % 2 === 0) {
+//       if (maxCoin < array[i]) {
+//         maxCoin = array[i];
+//       }
+//     }
+//   }
+//   return maxCoin;
+// };
+
+// console.log(findMaxNumber(array));
+
+// let hash = '#';
+
+// for (let i = 0; i < 130; i += 1) {
+//   console.log(hash);
+//   hash += hash[i];
+//   //   console.log(total);
+// }
+
