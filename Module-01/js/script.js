@@ -645,14 +645,40 @@
 
 // let userInput;
 
-let userInput = prompt('Введите целое число:');
+// let userInput = prompt('Введите целое число:');
 
-if (userInput === null) {
-  console.log('Ну и ладно!');
-} else if (Number.isInteger(Number(userInput))) {
-  console.log('Молодец');
-} else {
-  console.log('Это не целое число');
-}
+// if (userInput === null) {
+//   console.log('Ну и ладно!');
+// } else if (Number.isInteger(Number(userInput))) {
+//   console.log('Молодец');
+// } else {
+//   console.log('Это не целое число');
+// }
 // Или так проверять на целое число
 // else if (Number(userInput) % 1 === 0)
+
+// FUNCTION ===================================================================
+// const add = function(a, b, c) {
+//   return a + b + c;
+// };
+
+// // 1, 2, 3 это аргументы
+// const result = add(1, 2, 3);
+
+// console.log(result); // 6
+
+// console.log(add(5, 10, 15)); // 30
+
+function fnB() {
+  console.log('Выполняется [fnB]');
+}
+
+function fnA() {
+  console.log('Начала выполняться [fnA]');
+  fnB();
+  console.log('Продолжила выполняться [fnA] после выхода из [fnB]');
+}
+
+console.log('Начал выполнение [global]');
+fnA();
+console.log('Продолжил выполняться [global] после выхода из [fnA]');

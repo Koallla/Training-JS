@@ -1,0 +1,45 @@
+* {
+  box-sizing: border-box;
+}
+.flex {
+  display: flex;
+  justify-content: space-between;
+}
+
+.container {
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 80px;
+  height: 80px;
+  background: purple;
+  font-size: 40px;
+  color: #fff;
+}
+
+.search {
+  max-width: 600px;
+  width: 100%;
+  align-self: center;
+}
+
+.search__input {
+  width: 100%;
+  font-size: 20px;
+  padding: 8px 15px;
+}
+
+.menu {
+  min-width: 80px;
+  background: purple;
+  border: none;
+  cursor: pointer;
+  color: #fff;
+  font-size: 20px;
+}
